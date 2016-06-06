@@ -1,6 +1,6 @@
 <?php
 /**
- * Elimina un alumno de la base de datos
+ * Elimina un usuario_encuentro de la base de datos
  * distinguido por su identificador
  */
 
@@ -13,8 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $retorno = Usuarios_Encuentros::delete($body['idusuario'], $body['idencuentro']);
 
-	//$json_string = json_encode($clientes);
-	//echo 'antes de entrar';
     if ($retorno) {
         $json_string = json_encode(array("estado" => 1,"mensaje" => "Eliminacion exitosa"));
 		echo $json_string;

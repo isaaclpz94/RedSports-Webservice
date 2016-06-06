@@ -1,7 +1,7 @@
 <?php
 /**
- * Obtiene el detalle de un alumno especificado por
- * su identificador "idalumno"
+ * Obtiene el detalle de un encuentro especificado por
+ * su identificador "idusuario"
  */
 
 require 'Usuarios_Encuentros.php';
@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     if (isset($_GET['idusuario'])) {
 
-        // Obtener parámetro idalumno
+        // Obtener parámetro idusuario
         $parametro = $_GET['idusuario'];
 
         // Tratar retorno
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
             $encuentro["estado"] = 1;		
             $encuentro["encuentros"] = $retorno;
-            // Enviar objeto json del alumno
+            // Enviar objeto json del encuentro
             print json_encode($encuentro);
         } else {
             // Enviar respuesta de error general

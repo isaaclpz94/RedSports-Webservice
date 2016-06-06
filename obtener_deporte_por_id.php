@@ -1,7 +1,7 @@
 <?php
 /**
- * Obtiene el detalle de un alumno especificado por
- * su identificador "idalumno"
+ * Obtiene el detalle de un deporte especificado por
+ * su identificador "deporte_id"
  */
 
 require 'Deportes.php';

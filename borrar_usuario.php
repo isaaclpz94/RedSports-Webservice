@@ -1,6 +1,6 @@
 <?php
 /**
- * Elimina un alumno de la base de datos
+ * Elimina un usuario de la base de datos
  * distinguido por su identificador
  */
 

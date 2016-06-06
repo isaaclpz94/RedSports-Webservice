@@ -13,10 +13,7 @@ class Deportes
     }
 
     /**
-     * Retorna en la fila especificada de la tabla 'Deportes'
-     *
-     * @param $idDeporte Identificador del registro
-     * @return array Datos del registro
+     * Retorna todos los deportes
      */
     public static function getAll()
     {
@@ -35,10 +32,10 @@ class Deportes
     }
 
     /**
-     * Obtiene los campos de un Usuario con un identificador
+     * Obtiene los campos de un Deporte con un identificador
      * determinado
      *
-     * @param $idUsuario Identificador del usuario
+     * @param $idDeporte Identificador del deporte
      * @return mixed
      */
     public static function getById($idDeporte)
@@ -93,6 +90,7 @@ class Deportes
      * Insertar un nuevo Deporte
      *
      * @param $nombre nombre de deporte del nuevo registro
+     * @param $icono ruta del icono 
      * @return PDOStatement
      */
     public static function insert($nombre, $icono)
@@ -109,7 +107,7 @@ class Deportes
     /**
      * Eliminar el registro con el identificador especificado
      *
-     * @param $idUsuario identificador de la tabla Deportes
+     * @param $idDeporte identificador de la tabla Deportes
      * @return bool Respuesta de la eliminación
      */
     public static function delete($idDeporte)
@@ -122,35 +120,6 @@ class Deportes
 
         return $sentencia->execute(array($idDeporte));
     }
-	
-	
-	
-	/**
-	* Consultar los alumnos de un profesor con su id
-	*/
-	/*public static function getAlumnosbyProfID($idProfesor){
-		//Sentencia SELECT
-		$consulta = "SELECT `idalumno`,`nombre`,`direccion`,`rutaimagen` FROM `alumnos` WHERE profesor_id=?";
-		
-		try {
-            // Preparar sentencia
-            $comando = Database::getInstance()->getDb()->prepare($consulta);
-            // Ejecutar sentencia preparada
-            $comando->execute(array($idProfesor));
-			
-			//Captura los alumnos
-			return $comando->fetchAll(PDO::FETCH_ASSOC);
-			//$row = $comando->fetch(PDO::FETCH_ASSOC);
-            //return $row;
- 
-
-        } catch (PDOException $e) {
-            // Aquí puedes clasificar el error dependiendo de la excepción
-            // para presentarlo en la respuesta Json
-            return -1;
-        }
-	}*/
-
 }
 
 ?>

@@ -13,10 +13,7 @@ class Encuentros
     }
 
     /**
-     * Retorna en la fila especificada de la tabla 'Encuentros'
-     *
-     * @param $idEncuentro Identificador del registro
-     * @return array Datos del registro
+     * Retorna todos los encuentros
      */
     public static function getAll()
     {

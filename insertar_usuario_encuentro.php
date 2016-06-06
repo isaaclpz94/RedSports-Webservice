@@ -1,6 +1,6 @@
 <?php
 /**
- * Insertar un nuevo alumno en la base de datos
+ * Insertar un nuevo usuario_encuentro en la base de datos
  */
 
 require 'Usuarios_Encuentros.php';

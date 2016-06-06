@@ -1,6 +1,6 @@
 <?php
 /**
- * Obtiene todas las usuarios de la base de datos
+ * Obtiene todos los encuentros de la base de datos
  */
 
 require 'Encuentros.php';

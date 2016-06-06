@@ -10,10 +10,7 @@ class Usuarios_Encuentros
     }
 
     /**
-     * Retorna en la fila especificada de la tabla 'Usuarios_Encuentros'
-     *
-     * @param $idUsuario Identificador del registro
-     * @return array Datos del registro
+     * Retorna en todos los registros de la tabla usuarios_encuentros
      */
     public static function getAll()
     {
@@ -35,7 +32,7 @@ class Usuarios_Encuentros
      * Actualiza un registro de la bases de datos basado
      * en los nuevos valores relacionados con un identificador
      *
-     * @param $idEncuentro      identificador
+     * @param $idDeporte      identificador
      * @param $descripcion       nueva descripcion
      * @param $deporte_id      deporte realacionado
      * @param $apuntados      personas que van al encuentro
@@ -68,17 +65,10 @@ class Usuarios_Encuentros
     }
 
     /**
-     * Insertar un nuevo Deporte
+     * Insertar un nuevo Usuario_encuentro
      *
-     * @param $idEncuentro       identificador
-     * @param $descripcion       nueva descripcion
-     * @param $deporte_id        deporte realacionado
-     * @param $apuntados         personas que van al encuentro
-     * @param $capacidad         capacidad del encuentro
-     * @param $fecha             fecha del encuentro
-     * @param $hora              hora del encuentro
-     * @param $lat               latitud
-     * @param $lon               longitud encuentro
+     * @param $usuario_id       identificador de usuario
+     * @param $encuentro_id       identificador de encuentro
      * @return PDOStatement
      */
     public static function insert($usuario_id, $encuentro_id)

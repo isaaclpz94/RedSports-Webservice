@@ -13,10 +13,7 @@ class Usuarios
     }
 
     /**
-     * Retorna en la fila especificada de la tabla 'Usuarios'
-     *
-     * @param $idUsuario Identificador del registro
-     * @return array Datos del registro
+     * Retorna todos los usuarios
      */
     public static function getAll()
     {
@@ -66,10 +63,9 @@ class Usuarios
      * Actualiza un registro de la bases de datos basado
      * en los nuevos valores relacionados con un identificador
      *
-     * @param $idAlumno      identificador
-     * @param $nombre      nuevo nombre
-     * @param $direccion nueva direccion
-     
+     * @param $idUsuario      identificador
+     * @param usuario nuevo nombre de usuario
+     *
      */
     public static function updateUsername(
         $idUsuario,
@@ -92,9 +88,8 @@ class Usuarios
      * Actualiza un registro de la bases de datos basado
      * en los nuevos valores relacionados con un identificador
      *
-     * @param $idAlumno      identificador
+     * @param $idUsuario      identificador
      * @param $nombre      nuevo nombre
-     * @param $direccion nueva direccion
      
      */
     public static function updateNombre(
@@ -118,9 +113,8 @@ class Usuarios
      * Actualiza un registro de la bases de datos basado
      * en los nuevos valores relacionados con un identificador
      *
-     * @param $idAlumno      identificador
-     * @param $nombre      nuevo nombre
-     * @param $direccion nueva direccion
+     * @param $idUsuario      identificador
+     * @param $contrasena nueva contrasena
      
      */
     public static function updateContrasena(

@@ -1,6 +1,6 @@
 <?php
 /**
- * Obtiene todas las usuarios de la base de datos
+ * Obtiene todos los usuarios de la base de datos
  */
 
 require 'Usuarios.php';

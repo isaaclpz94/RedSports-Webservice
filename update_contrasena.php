@@ -1,6 +1,6 @@
 <?php
 /**
- * Actualiza un encuentro especificado por su identificador
+ * Actualiza un usuario especificado por su identificador
  */
 
 require 'Usuarios.php';
@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Decodificando formato Json
     $body = json_decode(file_get_contents("php://input"), true);
 
-    // Actualizar alumno
+    // Actualizar usuario
     $retorno = Usuarios::updateContrasena(
         $body['id'],
         $body['contrasena']);
